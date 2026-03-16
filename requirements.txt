@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+pymongo
+google-api-python-client
+pandas
+notebook

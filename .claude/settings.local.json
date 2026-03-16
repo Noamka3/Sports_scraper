@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py -c \"import pymongo; c = pymongo.MongoClient\\(''mongodb://localhost:27017/'', serverSelectionTimeoutMS=3000\\); c.server_info\\(\\); print\\(''MongoDB OK''\\)\")",
+      "Bash(\"c:/Users/97254/-final-project/venv/Scripts/python.exe\" -c \"import pymongo; import wordcloud; import seaborn; import pandas; print\\(''הכל OK''\\)\")"
+    ]
+  }
+}
