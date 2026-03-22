@@ -2,7 +2,25 @@
   "permissions": {
     "allow": [
       "Bash(py -c \"import pymongo; c = pymongo.MongoClient\\(''mongodb://localhost:27017/'', serverSelectionTimeoutMS=3000\\); c.server_info\\(\\); print\\(''MongoDB OK''\\)\")",
-      "Bash(\"c:/Users/97254/-final-project/venv/Scripts/python.exe\" -c \"import pymongo; import wordcloud; import seaborn; import pandas; print\\(''הכל OK''\\)\")"
+      "Bash(\"c:/Users/97254/-final-project/venv/Scripts/python.exe\" -c \"import pymongo; import wordcloud; import seaborn; import pandas; print\\(''הכל OK''\\)\")",
+      "Bash(git:*)",
+      "Bash(jupyter nbconvert:*)",
+      "Bash(brew install:*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(playwright install:*)",
+      "Bash(pandoc README.md -o README.pdf --pdf-engine=wkhtmltopdf)",
+      "Bash(pandoc README.md -o README.pdf)",
+      "Bash(pandoc:*)",
+      "Bash(mongosh --eval \"db.runCommand\\({ ping: 1 }\\)\" --quiet)",
+      "Bash(mongod --version)",
+      "Bash(mv \"צילום מסך 2026-03-20 ב-15.58.52.png\" \"main_screen.png\")",
+      "Bash(mv \"צילום מסך 2026-03-20 ב-16.01.26.png\" \"youtube_search_fcb.png\")",
+      "Bash(mv \"צילום מסך 2026-03-20 ב-16.01.53.png\" \"youtube_search_fcb_saved.png\")",
+      "Bash(mv \"צילום מסך 2026-03-20 ב-16.02.15.png\" \"bbc_search_iran.png\")",
+      "Bash(mv \"צילום מסך 2026-03-20 ב-16.02.55.png\" \"bbc_search_champions.png\")",
+      "Bash(pip list:*)",
+      "Bash(mdpdf:*)"
     ]
   }
 }

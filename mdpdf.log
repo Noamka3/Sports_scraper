@@ -1,0 +1,12 @@
+    INFO: 2026-03-22 19:46:40,390:               log.py:   20: Logging to /Users/roy-siftt/Sports_scraper/mdpdf.log
+   DEBUG: 2026-03-22 19:46:40,391:               cli.py:  103: SUMMARY.md
+    INFO: 2026-03-22 19:46:40,391:         converter.py:   14: SUMMARY.md
+   DEBUG: 2026-03-22 19:46:40,397:      pdf_renderer.py:  470: printSegment: Sports Scraper — Project Summary
+   DEBUG: 2026-03-22 19:46:40,405:      pdf_renderer.py:  470: printSegment: Project Overview
+   DEBUG: 2026-03-22 19:46:40,413:      pdf_renderer.py:  470: printSegment: Sports Scraper is a desktop application that collects sports news and content from multiple sources (YouTube and
+   DEBUG: 2026-03-22 19:46:40,415:      pdf_renderer.py:  470: printSegment: BBC Sport), stores the data in a MongoDB database, performs sentiment analysis on the results, and presents them
+   DEBUG: 2026-03-22 19:46:40,416:      pdf_renderer.py:  470: printSegment: through an interactive GUI.
+   DEBUG: 2026-03-22 19:46:40,417:      pdf_renderer.py:  470: printSegment: Application Screenshots 
+   DEBUG: 2026-03-22 19:46:40,417:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-03-22 19:46:40,417:      pdf_renderer.py:  470: printSegment:  Demo
+   DEBUG: 2026-03-22 19:46:40,417:      pdf_renderer.py:  470: printSegment: 1. Main Screen
