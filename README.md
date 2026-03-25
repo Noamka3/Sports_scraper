@@ -1,88 +1,88 @@
 # Sports Scraper 🏀⚽
 
-אפליקציה לאיסוף נתוני ספורט מ-YouTube ו-BBC Sport, שמירה ב-MongoDB וניתוח EDA.
+An application for collecting sports data from YouTube and BBC Sport, storing it in MongoDB, and performing EDA analysis.
 
 ---
 
-## דרישות מקדימות
+## Prerequisites
 
 - Python 3.8+
-- MongoDB מותקן ורץ כ-Service
-- Chrome Browser מותקן
+- MongoDB installed and running as a service
+- Chrome Browser installed
 - YouTube Data API v3 Key
 
 ---
 
-## התקנה
+## Installation
 
-### 1. שכפל את הפרויקט
+### 1. Clone the project
 ```bash
 git clone <repo-url>
 cd sports_scraper
 ```
 
-### 2. התקן את כל החבילות
+### 2. Install all packages
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. צור קובץ `.env` בתיקייה הראשית
+### 3. Create a `.env` file in the root directory
 ```
 YOUTUBE_API_KEY=your_api_key_here
 MONGO_URI=mongodb://localhost:27017/
 MONGO_DB_NAME=sports_scraper
 ```
 
-### 4. הפעל את MongoDB
+### 4. Start MongoDB
 ```bash
 net start MongoDB
 ```
 
-### 5. הרץ את האפליקציה
+### 5. Run the application
 ```bash
 python gui/app.py
 ```
 
 ---
 
-## מבנה הפרויקט
+## Project Structure
 
 ```
 sports_scraper/
-├── .env                         ← API Keys (לא מועלה ל-GitHub!)
+├── .env                         ← API Keys (not uploaded to GitHub!)
 ├── .gitignore
-├── config.py                    ← קורא מה-.env
+├── config.py                    ← Reads from .env
 ├── requirements.txt
 ├── models/
-│   └── post.py                  ← מודל נתונים אחיד
+│   └── post.py                  ← Unified data model
 ├── scrapers/
 │   ├── base_scraper.py          ← Abstract Base Class
 │   ├── youtube_scraper.py       ← YouTube API v3
 │   └── bbc_scraper.py           ← Selenium + BeautifulSoup
 ├── db/
-│   └── mongo_handler.py         ← שמירה ואחזור MongoDB
+│   └── mongo_handler.py         ← MongoDB save & retrieve
 ├── services/
 │   └── scraper_service.py       ← Business Logic + Sentiment
 ├── gui/
-│   └── app.py                   ← PySimpleGUI
+│   └── app.py                   ← Tkinter GUI
 └── notebooks/
-    └── eda_sports.ipynb         ← EDA + ניתוח נתונים
+    └── eda_sports.ipynb         ← EDA + Data Analysis
 ```
 
 ---
 
-## שימוש באפליקציה
+## Using the Application
 
-1. פתח את האפליקציה עם `python gui/app.py`
-2. הכנס מילת חיפוש (לדוגמה: `NBA finals`)
-3. בחר מקור — YouTube או BBC Sport
-4. לחץ **Search** לראות תוצאות
-5. לחץ **Save** לשמור ל-MongoDB
-6. לחץ **Load** לאחזר נתונים שמורים עם פילטרים
+1. Launch the application with `python gui/app.py`
+2. Enter a search keyword (e.g., `NBA finals`)
+3. Select a source — YouTube or BBC Sport
+4. Click **Search** to view results
+5. Click **Save** to save to MongoDB
+6. Click **Load** to retrieve saved data with filters
 
 ---
 
-## ניתוח EDA
+## EDA Analysis
 
 ```bash
 jupyter notebook notebooks/eda_sports.ipynb
@@ -111,8 +111,8 @@ python-dotenv
 
 ---
 
-## הערות
+## Notes
 
-- קובץ `.env` לא מועלה ל-GitHub — שמור את ה-API Key בטוח
-- ChromeDriver מותקן אוטומטית דרך `webdriver-manager`
-- MongoDB חייב לרוץ לפני הפעלת האפליקציה
+- The `.env` file is not uploaded to GitHub — keep your API Key safe
+- ChromeDriver is installed automatically via `webdriver-manager`
+- MongoDB must be running before launching the application
