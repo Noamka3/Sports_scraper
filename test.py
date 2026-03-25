@@ -30,4 +30,3 @@ saved_bbc = db.save_many(posts_bbc)
 print(f"Saved {saved_bbc} BBC posts to MongoDB")
 
 db.close()
-print("Everything works!")
